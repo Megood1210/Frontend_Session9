@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        height: 56px;
+        background-color: #3498db;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding:  0 24px;
+    }
+
+    .main {
+        display: flex;
+        flex: 1;
+        gap: 10px;
+        width: calc(100% -112px);
+    }
+
+    footer {
+        height: 56px;
+        background-color: #9b59b6;
+        padding: 20px 24px;
+        align-items: center;
+        color: white;
+    }
+
+    .sidebar{
+        border: 1px;
+        background-color: #2ecc71;
+        color: white;
+        display: flex;
+        flex: 1;
+        padding: 10px;
+        height: 500px; 
+    }
+
+    .content{
+        border: 1px;
+        background-color: #e74c3c;
+        color: white;
+        display: flex;
+        flex: 3;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <br />
+        <main class="main">
+            <section class="sidebar">Sidebar</section>
+            <section class="content">Content</section>
+        </main>
+        <br />
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
